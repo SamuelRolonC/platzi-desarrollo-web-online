@@ -4,30 +4,40 @@
         <meta charset="UTF-8">
         <title>Samuel Rolón Cicciari</title>
         <link rel="icon" type="image/png" href="bin/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./css/styles.css"/>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Portafolio</a>
-                    </li>
-                    <li>
-                        <a>Experiencia</a>
-                    </li>
-                    <li>
-                        <a>Trabajemos juntos</a>
-                    </li>
-                </ul>
-            </nav>
+            <div>
+                <figure class="logo-site">
+                    <img src="" alt="logo" />
+                </figure>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="link-menu" href="#aboutme">Quién soy</a>
+                        </li>
+                        <li>
+                            <a class="link-menu" href="#education">Formación</a>
+                        </li>
+                        <li>
+                            <a class="link-menu" href="#experience">Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="link-menu" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <section><!-- Seccion principal -->
-            <h1>
-                Soy Samuel Rolón Cicciari, desarrollador C# y Analista de Sistemas.
+        <section id="aboutme" class="hero">
+            <h1 class="hero-title">
+                Soy <strong>Samuel Rolón Cicciari</strong>, <br><strong>desarrollador C#</strong> y <br><strong>Analista de Sistemas</strong>.
             </h1>
-            <img src="bin/hero.jpg" alt="Imagen principal" width="500px" height="300px">
+            <!-- <img src="bin/hero.jpg" alt="Imagen principal" width="500px" height="300px"> -->
         </section>
-        <section>
+        <section class="tecnologies">
             <h2>Tecnologías uso actualmente</h2>
             <article>
                 <figure>
@@ -42,26 +52,40 @@
                 <h3>C#</h3>
             </article>
         </section>
-        <section><!-- Seccion experiencia -->
-            <h2>Experiencia</h2>
-            <article>
-                <h3>Desarrollador</h3>
-                <h4>HS Consulting</h6>
-                <p><strong>Desde:</strong> Agosto 2018</p>
-                <p><strong>Hasta:</strong> Actualidad</p>
-                <p>Desarrollo en C# ASP.NET, con Javascript, Infraestructura y Redes</p>
-                <img src="" alt="Logo HS Consulting">
+        <section id="experience" class="experience">
+            <h2 class="experience-title">Experiencia</h2>
+            <article class="job">
+                <div class="job-details">
+                    <h3 class="job-title">Desarrollador</h3>
+                    <h4 class="job-cia"> HS Consulting</h6>
+                    <p class="job-date"><strong>Desde:</strong> Agosto 2019</p>
+                    <p class="job-date"><strong>Hasta:</strong> Actualidad</p>
+                    <p class="job-description">Desarrollo en C# ASP.NET, con Javascript, Infraestructura y Redes</p>
+                </div>
+                <figure class="job-image-wrapper">
+                    <img class="job-image" src="bin/hs-logo.png" alt="Logo HS Consulting">
+                </figure>
             </article>
-            <article>
-                <h3>Soporte técnico y seguridad informática</h3>
-                <h4>EDSI Trend Argentina</h6>
-                <p><strong>Desde:</strong>Agosto 2018</p>
-                <p><strong>Hasta:</strong>Julio 2019</p>
-                <p>Implementacion y soporte de productos de Trend Micro</p>
-                <img src="" alt="Logo EDSI Trend">
+            <article class="job">
+                <div class="job-details">
+                    <h3 class="job-title">Soporte técnico y seguridad informática</h3>
+                    <h4 class="job-cia">EDSI Trend Argentina</h6>
+                    <p class="job-date"><strong>Desde:</strong> Agosto 2018</p>
+                    <p class="job-date"><strong>Hasta:</strong> Julio 2019</p>
+                    <p class="job-description">Implementacion y soporte de productos de Trend Micro</p>
+                </div>
+                <figure class="job-image-wrapper">
+                    <img class="job-image" src="" alt="Logo EDSI Trend">
+                </figure>
             </article>
         </section>
-        <section>Seccion contactos</section>
+        <section id="contact" class="contact">
+            <form class="form-email">
+                <h3 class="contact-title">Contacto</h3>
+                <input id="email" type="text" placeholder="Dejame tu email">
+                <button>Enviar</button>
+            </form>
+        </section>
         <footer></footer>
     </body>
 </html>
