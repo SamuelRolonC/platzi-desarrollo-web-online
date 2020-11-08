@@ -1,11 +1,42 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
 header {
     background: #1b2127;
-    color: blanchedalmond;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 86px;
+}
+
+.menu {
+    height: inherit;
+}
+
+header ul {
+    display: flex;
+    height: inherit;
+}
+
+header ul li {
+    height: inherit;
 }
 
 header a {
-    color: blanchedalmond;
+    color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
 }
 
 body {
@@ -24,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .hero strong {
@@ -55,6 +89,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .job {
     border: 1px solid;
     margin: 5px 0px;
@@ -70,4 +111,12 @@ h1, h2, h3, h4, h5, h6 {
 .job-image-wrapper {
     width: 500px;
     display: inline-block;
+}
+
+footer {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
