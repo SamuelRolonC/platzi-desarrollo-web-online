@@ -6,90 +6,152 @@
         <link rel="icon" type="image/png" href="bin/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./css/styles.css"/>
+        <script src="https://kit.fontawesome.com/8375072005.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <figure class="logo-site">
-                <img src="bin/site-logo.png" alt="logo" width="309px" height="86px"/>
-            </figure>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a class="link-menu" href="#aboutme">Quién soy</a>
-                    </li>
-                    <li>
-                        <a class="link-menu" href="#education">Formación</a>
-                    </li>
-                    <li>
-                        <a class="link-menu" href="#experience">Experiencia</a>
-                    </li>
-                    <li>
-                        <a class="link-menu" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="wrapper">
+                <figure class="logo-site">
+                    <img src="bin/site-logo.png" alt="logo" width="309px" height="86px"/>
+                </figure>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="link-menu" href="#aboutme">Quién soy</a>
+                        </li>
+                        <li>
+                            <a class="link-menu" href="#education">Formación</a>
+                        </li>
+                        <li>
+                            <a class="link-menu" href="#experience">Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="link-menu" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <section id="aboutme" class="hero">
-            <h1 class="hero-title">
-                Soy <strong>Samuel Rolón Cicciari</strong>, <br><strong>desarrollador C#</strong> y <br><strong>Analista de Sistemas</strong>.
-            </h1>
-            <!-- <img src="bin/hero.jpg" alt="Imagen principal" width="500px" height="300px"> -->
+            <div class="wrapper">
+                <h1 class="hero-title">
+                    Soy <strong>Samuel Rolón Cicciari</strong>, <br><strong>desarrollador C#</strong> y <br><strong>Analista de Sistemas</strong>.
+                </h1>
+                <img class="hero-image" src="bin/hero.jpg" alt="Imagen principal" width="500px" height="300px">
+            </div>
         </section>
         <section class="tecnologies">
-            <h2>Tecnologías uso actualmente</h2>
-            <article>
-                <figure>
-                    <img src="bin/git-logo.png" alt="Logo Git" width="50px" height="50px">
-                </figure>
-                <h3>Git</h3>
-            </article>
-            <article>
-                <figure>
-                    <img src="bin/csharp-logo.png" alt="Logo C sharp" width="50px" height="50px">
-                </figure>
-                <h3>C#</h3>
-            </article>
+            <div class="wrapper">
+                <h2>Tecnologías uso actualmente</h2>
+                <article>
+                    <figure>
+                        <img src="bin/git-logo.png" alt="Logo Git" width="50px" height="50px">
+                    </figure>
+                    <h3>Git</h3>
+                </article>
+                <article>
+                    <figure>
+                        <img src="bin/csharp-logo.png" alt="Logo C sharp" width="50px" height="50px">
+                    </figure>
+                    <h3>C#</h3>
+                </article>
+            </div>
         </section>
         <section id="experience" class="experience">
-            <h2 class="experience-title">Experiencia</h2>
-            <article class="job">
-                <div class="job-details">
-                    <h3 class="job-title">Desarrollador</h3>
-                    <h4 class="job-cia"> HS Consulting</h6>
-                    <p class="job-date"><strong>Desde:</strong> Agosto 2019</p>
-                    <p class="job-date"><strong>Hasta:</strong> Actualidad</p>
-                    <p class="job-description">Desarrollo en C# ASP.NET, con Javascript, Infraestructura y Redes</p>
+            <div class="wrapper">
+                <h2 class="experience-title">Experiencia</h2>
+                <article class="job">
+                    <div class="job-details">
+                        <h3 class="job-title">Desarrollador</h3>
+                        <h4 class="job-cia"> HS Consulting</h4>
+                        <p class="job-date"><strong>Desde:</strong> Agosto 2019 - <strong>Hasta:</strong> Actualidad</p>
+                        <p class="job-description">Desarrollo en C# ASP.NET, con Javascript, Infraestructura y Redes</p>
+                    </div>
+                    <figure class="job-image-wrapper">
+                        <img class="job-image" src="bin/hs-logo.png" alt="Logo HS Consulting" style="height: 100px;">
+                    </figure>
+                </article>
+                <article class="job">
+                    <div class="job-details">
+                        <h3 class="job-title">Soporte técnico y seguridad informática</h3>
+                        <h4 class="job-cia">EDSI Trend Argentina</h4>
+                        <p class="job-date"><strong>Desde:</strong> Agosto 2018 - <strong>Hasta:</strong> Julio 2019</p>
+                        <p class="job-description">Implementacion y soporte de productos de Trend Micro</p>
+                    </div>
+                    <figure class="job-image-wrapper">
+                        <img class="job-image" src="" alt="Logo EDSI Trend" style="height: 100px;">
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <section id="events">
+            <div class="wrapper">
+                <h2 class="event-title">Más sobre mi experiencia</h2>
+                <div class="event-list">
+                    <article class="event">
+                        <figure class="event-image-container">
+                            <img class="event-image" src="bin/hero.jpg" alt="Imagen del evento">
+                        </figure>
+                        <div class="event-details">
+                            <h3 class="event-title">Título del evento</h3>
+                            <p class="event-description">Descripción larga del evento al que se asistío. Y, tal vez, con algunas ideas propias de lo que representa.</p>
+                            <a class="event-url" href="#">Ver evento</a>
+                        </div>
+                    </article>
+                    <article class="event">
+                        <figure class="event-image-container">
+                            <img class="event-image" src="bin/hero.jpg" alt="Imagen del evento">
+                        </figure>
+                        <div class="event-details">
+                            <h3 class="event-title">Título del evento</h3>
+                            <p class="event-description">Descripción larga del evento al que se asistío. Y, tal vez, con algunas ideas propias de lo que representa.</p>
+                            <a class="event-url" href="#">Ver evento</a>
+                        </div>
+                    </article>
+                    <article class="event">
+                        <figure class="event-image-container">
+                            <img class="event-image" src="bin/hero.jpg" alt="Imagen del evento">
+                        </figure>
+                        <div class="event-details">
+                            <h3 class="event-title">Título del evento</h3>
+                            <p class="event-description">Descripción larga del evento al que se asistío. Y, tal vez, con algunas ideas propias de lo que representa.</p>
+                            <a class="event-url" href="#">Ver evento</a>
+                        </div>
+                    </article>
+                    <article class="event">
+                        <figure class="event-image-container">
+                            <img class="event-image" src="bin/hero.jpg" alt="Imagen del evento">
+                        </figure>
+                        <div class="event-details">
+                            <h3 class="event-title">Título del evento</h3>
+                            <p class="event-description">Descripción larga del evento al que se asistío. Y, tal vez, con algunas ideas propias de lo que representa.</p>
+                            <a class="event-url" href="#">Ver evento</a>
+                        </div>
+                    </article>
                 </div>
-                <figure class="job-image-wrapper">
-                    <img class="job-image" src="bin/hs-logo.png" alt="Logo HS Consulting">
-                </figure>
-            </article>
-            <article class="job">
-                <div class="job-details">
-                    <h3 class="job-title">Soporte técnico y seguridad informática</h3>
-                    <h4 class="job-cia">EDSI Trend Argentina</h6>
-                    <p class="job-date"><strong>Desde:</strong> Agosto 2018</p>
-                    <p class="job-date"><strong>Hasta:</strong> Julio 2019</p>
-                    <p class="job-description">Implementacion y soporte de productos de Trend Micro</p>
-                </div>
-                <figure class="job-image-wrapper">
-                    <img class="job-image" src="" alt="Logo EDSI Trend">
-                </figure>
-            </article>
+            </div>
         </section>
         <section id="contact" class="contact">
-            <form class="form-email">
-                <h2 class="contact-title">Contacto</h3>
-                <input id="email" type="text" placeholder="Dejame tu email">
-                <button>Enviar</button>
-            </form>
+            <div class="wrapper">
+                <form class="form-email">
+                    <h2 class="contact-title">Contactame</h3>
+                    <input id="email" type="text" placeholder="Dejame tu email">
+                    <button>Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="https://twitter.com/samueldotdev" class="social-link twitter"><i class="fab fa-twitter fa-3x"></i></a>
+                    <a href="https://github.com/samuelrolonc" class="social-link github"><i class="fab fa-github fa-3x"></i></a>
+                </div>
+            </div>
         </section>
         <footer>
-            <div>
-                <p>Samuel Rol&oacute;n Cicciari</p>
-            </div>
-            <div>
-                <p>Designed and develped by Samuel Rol&oacute;n Cicciari</p> 
+            <div class="wrapper">
+                <div>
+                    <p>Samuel Rol&oacute;n Cicciari</p>
+                </div>
+                <div>
+                    <p>Designed and develped by Samuel Rol&oacute;n Cicciari</p> 
+                </div>
             </div>
         </footer>
     </body>
