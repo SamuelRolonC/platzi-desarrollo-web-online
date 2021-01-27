@@ -122,6 +122,7 @@ h2 {
 .job-details {
     width: 50%;
     display: inline-block;
+    align-self: flex-start; 
 }
 
 .job-title {
@@ -142,6 +143,10 @@ h2 {
     text-align: center;
 }
 
+.job-image-wrapper img {
+    max-width: 100%;
+}
+
 .job-description {
     margin: 10px 0;
     font-size: 20px;
@@ -157,8 +162,8 @@ h2 {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -259,7 +264,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-
+    .wrapper {
+        padding: 0 1em;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -294,11 +301,70 @@ footer {
 
     .job-details {
         width: auto;
+        font-size: 16px;
+    }
+
+    .job-title {
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    
+    .job-cia, .job-date {
+        margin: .3em 0;
+    }
+
+    .job-cia {
+        font-size: 1em;
+    }
+
+    .job-date {
+        font-size: .7em;
+    }
+
+    .job-description {
+        font-size: .8em;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    
+    .job-details {
+        font-size: 12px;
+    }
+
+    .event-details {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button {
+        margin: 1em auto;
+    }
+
+    .form-email h2 {
+        margin-top: 0;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
 }
 
 @media screen and (max-width: 320px) {
